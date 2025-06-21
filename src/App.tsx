@@ -41,7 +41,7 @@ function App() {
           index
           element={
             <>
-              <PageTitle title="Home | Gyakie" />
+              <PageTitle title="Home | Sama.Dev" />
               <LandingPage />
             </>
           }
@@ -51,7 +51,7 @@ function App() {
           path="/signup"
           element={
             <>
-              <PageTitle title="Sign Up | Gyakie" />
+              <PageTitle title="Sign Up | Sama.Dev" />
               <SignUp />
             </>
           }
