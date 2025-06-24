@@ -17,6 +17,7 @@ const projectData = [
     linkColor: 'text-purple-400',
     href: 'https://youtu.be/rWl-thnEyQY',
     iconComponent: <Palette size={16} className="text-purple-400" />,
+    target: "_blank"
   },
   {
     id: 2,
@@ -32,6 +33,7 @@ const projectData = [
     linkColor: 'text-emerald-400',
     href: '/brand-identity',
     iconComponent: <Palette size={16} className="text-emerald-400" />,
+    target: ""
   },
   {
     id: 3,
@@ -47,6 +49,7 @@ const projectData = [
     linkColor: 'text-orange-400',
     href: '/sounds',
     iconComponent: <Music size={16} className="text-orange-400" />,
+     target: ""
   },
   {
     id: 4,
@@ -62,6 +65,7 @@ const projectData = [
     linkColor: 'text-blue-400',
     href: 'https://www.youtube.com/watch?v=lvjfaL-MHiw&list=PLOvNa3sdza-1zsWfJvDKdXrMVk0-vOYzf&pp=gAQB0gcJCWMEOCosWNin',
     iconComponent: <ExternalLink size={16} className="text-blue-400" />,
+     target: "_blank"
   },
   {
     id: 5,
@@ -77,6 +81,7 @@ const projectData = [
     linkColor: 'text-indigo-400',
     href: 'https://gyakie-com.vercel.app/',
     iconComponent: <Code size={16} className="text-indigo-400" />,
+     target: "_blank"
   },
   {
     id: 6,
@@ -92,6 +97,7 @@ const projectData = [
     linkColor: 'text-pink-400',
     href: '/graphics-gallery',
     iconComponent: <LucidePictureInPicture size={16} className="text-pink-400" />,
+     target: ""
   },
   {
     id: 7,
@@ -107,6 +113,7 @@ const projectData = [
     linkColor: 'text-pink-400',
     href: 'https://youtu.be/PdAwLbixENQ',
     iconComponent: <Palette size={16} className="text-pink-400" />,
+     target: "_blank"
   },
 
 ];
@@ -170,26 +177,15 @@ const CreativeSection = () => {
                 <p className="text-gray-400 mb-4">{project.description}</p>
                 <div className="flex gap-4">
                   <div className="flex gap-4">
-                    {project.href.startsWith('/') ? (
-                      <Link
-                        to={project.href}
-                        target="_blank"
-                        className={`flex items-center gap-2 ${project.linkColor} hover:opacity-80 transition-colors`}
-                      >
-                        <ExternalLink size={16} />
-                        {project.linkText}
-                      </Link>
-                    ) : (
-                      <a
+                  <a
                         href={project.href}
-                        target="_blank"
+                        target={project.target}
                         rel="noopener noreferrer"
                         className={`flex items-center gap-2 ${project.linkColor} hover:opacity-80 transition-colors`}
                       >
                         <ExternalLink size={16} />
                         {project.linkText}
                       </a>
-                    )}
                   </div>
                 </div>
               </div>
