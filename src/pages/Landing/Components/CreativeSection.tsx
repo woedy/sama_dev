@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ExternalLink, Code, Palette, Music } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const projectData = [
   {
@@ -152,15 +153,28 @@ const CreativeSection = () => {
                 <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
                 <p className="text-gray-400 mb-4">{project.description}</p>
                 <div className="flex gap-4">
-                  <a
-                    href={project.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`flex items-center gap-2 ${project.linkColor} hover:opacity-80 transition-colors`}
-                  >
-                    <ExternalLink size={16} />
-                    {project.linkText}
-                  </a>
+                <div className="flex gap-4">
+  {project.href.startsWith('/') ? (
+    <Link
+      to={project.href}
+      target='_blank'
+      className={`flex items-center gap-2 ${project.linkColor} hover:opacity-80 transition-colors`}
+    >
+      <ExternalLink size={16} />
+      {project.linkText}
+    </Link>
+  ) : (
+    <a
+      href={project.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`flex items-center gap-2 ${project.linkColor} hover:opacity-80 transition-colors`}
+    >
+      <ExternalLink size={16} />
+      {project.linkText}
+    </a>
+  )}
+</div>
                 </div>
               </div>
             </div>
