@@ -17,7 +17,7 @@ export const graphicGallery = [
     {
       id: 1,
       title: 'Brand Poster',
-      image: mtnhome,
+      image: "MTN Landing Page Redesign",
     },
     {
       id: 2,
@@ -26,48 +26,48 @@ export const graphicGallery = [
     },
     {
       id: 3,
-      title: 'Event Flyer',
+      title: 'Hubtel Landing Page Redesign',
       image:hubtel,
     },
     {
       id: 4,
-      title: 'Infographic',
+      title: 'BKR Landing Page Redesign',
       image: bkr,
     },
     {
       id: 5,
-      title: 'Logo Concept',
+      title: 'Poster Concept',
       image: samahat,
     },
     {
       id: 6,
-      title: 'Logo Concept',
+      title: 'Flyer Concept',
       image: tika1,
     },
     {
       id: 7,
-      title: 'Logo Concept',
+      title: 'Flyer Concept',
       image: tika2,
     },
     {
       id: 8,
-      title: 'Logo Concept',
+      title: 'Flyer Concept',
       image: tika3,
     },
     {
       id: 9,
-      title: 'Logo Concept',
+      title: 'Flyer Concept',
       image: tika4,
     },
     {
       id: 10,
-      title: 'Logo Concept',
+      title: 'Flyer Concept',
       image: tika5,
     },
 
     {
       id: 11,
-      title: 'Logo Concept',
+      title: 'Flyer Concept',
       image: tika6,
     },
   ];
