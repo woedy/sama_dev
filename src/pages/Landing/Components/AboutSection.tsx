@@ -17,7 +17,7 @@ const AboutSection = ({}) => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-lg text-gray-300 leading-relaxed mb-6">
-              I'm a versatile full-stack developer with over 5+ years of
+              I'm a versatile full-stack developer with over 7+ years of
               experience building web and mobile applications. My journey spans
               from backend architecture to frontend design, always focusing on
               creating seamless user experiences.
@@ -35,7 +35,7 @@ const AboutSection = ({}) => {
           <div className="grid grid-cols-2 gap-6">
             <div className="bg-slate-800/50 p-6 rounded-lg border border-slate-700">
               <Code className="text-blue-400 mb-4" size={32} />
-              <h3 className="font-semibold mb-2">5+ Years</h3>
+              <h3 className="font-semibold mb-2">7+ Years</h3>
               <p className="text-gray-400 text-sm">Development Experience</p>
             </div>
             <div className="bg-slate-800/50 p-6 rounded-lg border border-slate-700">
