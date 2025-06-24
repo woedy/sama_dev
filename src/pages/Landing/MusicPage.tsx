@@ -49,7 +49,7 @@ const MusicPage = () => {
   return (
     <div className="bg-slate-900 text-gray-200 min-h-screen py-16 px-6">
       <div className="max-w-5xl mx-auto">
-        <h1 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-pink to-purple bg-clip-text text-transparent">
+        <h1 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
           Music & Sound Portfolio
         </h1>
 

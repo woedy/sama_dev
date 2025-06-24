@@ -131,7 +131,7 @@ const CreativeSection = () => {
   return (
     <section id="creatives" className="py-20 px-6 bg-slate-800/30">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-purple to-pink bg-clip-text text-transparent">
+        <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
           Creative Portfolio
         </h2>
 
