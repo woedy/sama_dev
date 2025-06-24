@@ -85,7 +85,7 @@ const GraphicsGallery = () => {
   return (
     <div className="bg-slate-900 text-gray-200 min-h-screen py-16 px-6">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+        <h1 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-purple to-pink bg-clip-text text-transparent">
           Graphic Design Gallery
         </h1>
 
