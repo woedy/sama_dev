@@ -45,7 +45,7 @@ const projectData = [
       'Original music composition and sound engineering for various projects and media.',
     linkText: 'Listen',
     linkColor: 'text-orange-400',
-    href: '#',
+    href: '/sounds',
     iconComponent: <Music size={16} className="text-orange-400" />,
   },
   {
@@ -60,7 +60,7 @@ const projectData = [
       'Professional demo videos showcasing app features and user interactions.',
     linkText: 'Watch Demo',
     linkColor: 'text-blue-400',
-    href:"https://www.youtube.com/watch?v=lvjfaL-MHiw&list=PLOvNa3sdza-1zsWfJvDKdXrMVk0-vOYzf&pp=gAQB0gcJCWMEOCosWNin",
+    href: 'https://www.youtube.com/watch?v=lvjfaL-MHiw&list=PLOvNa3sdza-1zsWfJvDKdXrMVk0-vOYzf&pp=gAQB0gcJCWMEOCosWNin',
     iconComponent: <ExternalLink size={16} className="text-blue-400" />,
   },
   {
@@ -153,28 +153,28 @@ const CreativeSection = () => {
                 <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
                 <p className="text-gray-400 mb-4">{project.description}</p>
                 <div className="flex gap-4">
-                <div className="flex gap-4">
-  {project.href.startsWith('/') ? (
-    <Link
-      to={project.href}
-      target='_blank'
-      className={`flex items-center gap-2 ${project.linkColor} hover:opacity-80 transition-colors`}
-    >
-      <ExternalLink size={16} />
-      {project.linkText}
-    </Link>
-  ) : (
-    <a
-      href={project.href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={`flex items-center gap-2 ${project.linkColor} hover:opacity-80 transition-colors`}
-    >
-      <ExternalLink size={16} />
-      {project.linkText}
-    </a>
-  )}
-</div>
+                  <div className="flex gap-4">
+                    {project.href.startsWith('/') ? (
+                      <Link
+                        to={project.href}
+                        target="_blank"
+                        className={`flex items-center gap-2 ${project.linkColor} hover:opacity-80 transition-colors`}
+                      >
+                        <ExternalLink size={16} />
+                        {project.linkText}
+                      </Link>
+                    ) : (
+                      <a
+                        href={project.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`flex items-center gap-2 ${project.linkColor} hover:opacity-80 transition-colors`}
+                      >
+                        <ExternalLink size={16} />
+                        {project.linkText}
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>

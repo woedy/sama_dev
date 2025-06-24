@@ -8,8 +8,9 @@ import DefaultLayout from './layout/DefaultLayout';
 import SignUp from './pages/Authentication/SignUp';
 import LandingPage from './pages/Landing/LandingPage';
 import BrandIdentity from './pages/Landing/BrandIdentity';
+import MusicPage from './pages/Landing/MusicPage';
 
-const hiddenOnRoutes = ['/', '/signup', '/verify-user', '/brand-identity'];
+const hiddenOnRoutes = ['/', '/signup', '/verify-user', '/brand-identity', '/sounds'];
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -64,6 +65,15 @@ function App() {
             <>
               <PageTitle title="Brand Identity | Sama.Dev" />
               <BrandIdentity />
+            </>
+          }
+        />
+        <Route
+          path="/sounds"
+          element={
+            <>
+              <PageTitle title="My Sounds | Sama.Dev" />
+              <MusicPage />
             </>
           }
         />
