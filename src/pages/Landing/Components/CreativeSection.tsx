@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ExternalLink, Code, Palette, Music } from 'lucide-react';
+import { ExternalLink, Code, Palette, Music, Image, LucidePictureInPicture } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const projectData = [
@@ -81,6 +81,21 @@ const projectData = [
   {
     id: 6,
     category: 'Graphics',
+    icon: '📁',
+    iconColor: 'text-pink-400',
+    gradient: 'from-pink-600/20 to-rose-600/20',
+    label: 'Flyers and Posters',
+    title: 'Graphics Gallery',
+    description:
+      'Custom motion graphics and animations for web and mobile applications.',
+    linkText: 'View Animation',
+    linkColor: 'text-pink-400',
+    href: '/graphics-gallery',
+    iconComponent: <LucidePictureInPicture size={16} className="text-pink-400" />,
+  },
+  {
+    id: 7,
+    category: 'Graphics',
     icon: '✨',
     iconColor: 'text-pink-400',
     gradient: 'from-pink-600/20 to-rose-600/20',
@@ -93,6 +108,7 @@ const projectData = [
     href: 'https://youtu.be/PdAwLbixENQ',
     iconComponent: <Palette size={16} className="text-pink-400" />,
   },
+
 ];
 
 const categories = ['All', 'UI/UX', 'Graphics', 'Music', 'Videos'];

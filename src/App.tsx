@@ -9,8 +9,9 @@ import SignUp from './pages/Authentication/SignUp';
 import LandingPage from './pages/Landing/LandingPage';
 import BrandIdentity from './pages/Landing/BrandIdentity';
 import MusicPage from './pages/Landing/MusicPage';
+import GraphicsGallery from './pages/Landing/GraphicsGallery';
 
-const hiddenOnRoutes = ['/', '/signup', '/verify-user', '/brand-identity', '/sounds'];
+const hiddenOnRoutes = ['/', '/signup', '/verify-user', '/brand-identity', '/sounds', '/graphics-gallery'];
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -74,6 +75,15 @@ function App() {
             <>
               <PageTitle title="My Sounds | Sama.Dev" />
               <MusicPage />
+            </>
+          }
+        />
+        <Route
+          path="/graphics-gallery"
+          element={
+            <>
+              <PageTitle title="Graphics Gallery | Sama.Dev" />
+              <GraphicsGallery />
             </>
           }
         />
