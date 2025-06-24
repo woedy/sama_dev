@@ -6,6 +6,7 @@ import ProjectsSection from './Components/ProjectsSection';
 import CreativeSection from './Components/CreativeSection';
 import ContactSection from './Components/ContactSection';
 import FooterSection from './Components/FooterSection';
+import DeploySection from './Components/Deployed';
 
 export default function LandingPage() {
   return (
@@ -25,6 +26,8 @@ export default function LandingPage() {
 
       {/* Projects Section */}
       <ProjectsSection />
+
+      <DeploySection />
 
       {/* Creative Portfolio Section */}
 
