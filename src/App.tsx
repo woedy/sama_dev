@@ -7,8 +7,9 @@ import PageTitle from './components/PageTitle';
 import DefaultLayout from './layout/DefaultLayout';
 import SignUp from './pages/Authentication/SignUp';
 import LandingPage from './pages/Landing/LandingPage';
+import BrandIdentity from './pages/Landing/BrandIdentity';
 
-const hiddenOnRoutes = ['/', '/signup', '/verify-user'];
+const hiddenOnRoutes = ['/', '/signup', '/verify-user', '/brand-identity'];
 
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
@@ -53,6 +54,16 @@ function App() {
             <>
               <PageTitle title="Sign Up | Sama.Dev" />
               <SignUp />
+            </>
+          }
+        />
+
+        <Route
+          path="/brand-identity"
+          element={
+            <>
+              <PageTitle title="Brand Identity | Sama.Dev" />
+              <BrandIdentity />
             </>
           }
         />
