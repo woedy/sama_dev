@@ -1,5 +1,8 @@
 import React from 'react';
 import afro from '../../images/portfolio/AFRO.jpg';
+import just from '../../images/portfolio/just.jpg';
+import ragga from '../../images/portfolio/ragga.jpg';
+import neofast from '../../images/portfolio/neofast.jpg';
 
 import { ExternalLink } from 'lucide-react';
 
@@ -10,26 +13,35 @@ export const musicTracks = [
       id: 1,
       title: 'Short Afro Beat',
       description: 'African style afro beat.',
-      platform: 'soundtrack',
-      url: 'https://youtu.be/your-video-id',
+      platform: 'SoundTrack',
+      url: 'https://soundcloud.com/sama-beatz/short-afro?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
       cover: afro,
     },
     {
       id: 2,
-      title: 'Midnight Drive',
-      description: 'Synthwave-inspired beat for late night vibes.',
-      platform: 'Audiomack',
-      url: 'https://audiomack.com/yourprofile/song/midnight-drive',
-      cover: '/images/midnight-drive.jpg',
+      title: 'Afro Reggae',
+      description: 'Chill Raggae Instrumental Vibes.',
+      platform: 'SoundTrack',
+      url: 'https://soundcloud.com/sama-beatz/borgadre-2021?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
+      cover: ragga,
     },
     {
       id: 3,
-      title: 'Elevation',
-      description: 'Uplifting soundtrack with cinematic energy.',
-      platform: 'Spotify',
-      url: 'https://open.spotify.com/track/your-track-id',
-      cover: '/images/elevation.jpg',
+      title: 'Just a girl ft.chydee',
+      description: 'Music',
+      platform: 'SoundTrack',
+      url: 'https://soundcloud.com/sama-beatz/jx-a-girl-raggae?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
+      cover: just,
     },
+
+    {
+        id: 4,
+        title: 'Neo-soul fast jam',
+        description: 'Neo-soul inspired beat but a bit fast',
+        platform: 'SoundTrack',
+        url: 'https://soundcloud.com/sama-beatz/neo-soul-jam?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing',
+        cover: neofast,
+      },
   ];
 
   
