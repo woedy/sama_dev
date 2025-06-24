@@ -11,13 +11,14 @@ import tika3 from '../../images/portfolio/tika3.jpg';
 import tika4 from '../../images/portfolio/tika4.jpg';
 import tika5 from '../../images/portfolio/tika5.jpg';
 import tika6 from '../../images/portfolio/tika6.jpg';
+import fafa from '../../images/portfolio/fafa bedsheet.jpg';
 
 // graphicGalleryData.ts
 export const graphicGallery = [
     {
       id: 1,
-      title: 'Brand Poster',
-      image: "MTN Landing Page Redesign",
+      title: "MTN Landing Page Redesign",
+      image: mtnhome,
     },
     {
       id: 2,
@@ -52,7 +53,7 @@ export const graphicGallery = [
     {
       id: 8,
       title: 'Flyer Concept',
-      image: tika3,
+      image: fafa,
     },
     {
       id: 9,
@@ -69,6 +70,11 @@ export const graphicGallery = [
       id: 11,
       title: 'Flyer Concept',
       image: tika6,
+    },
+    {
+      id: 11,
+      title: 'Flyer Concept',
+      image: tika3,
     },
   ];
   
