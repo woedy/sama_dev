@@ -115,7 +115,22 @@ const projectData = [
     iconComponent: <Palette size={16} className="text-pink-400" />,
      target: "_blank"
   },
-
+  {
+    id: 8,
+    category: 'Videos',
+    icon: '👶',
+    iconColor: 'text-blue-400',
+    gradient: 'from-blue-600/20 to-purple-600/20',
+    label: 'Video Animation',
+    title: 'Kids Learning Animation',
+    description:
+      'An engaging educational animation for children.',
+    linkText: 'Watch Video',
+    linkColor: 'text-blue-400',
+    href: 'https://youtu.be/-4ak3tQVwIY',
+    iconComponent: <ExternalLink size={16} className="text-blue-400" />,
+     target: "_blank"
+  },
 ];
 
 const categories = ['All', 'UI/UX', 'Graphics', 'Music', 'Videos'];
